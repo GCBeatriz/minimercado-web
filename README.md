@@ -8,11 +8,15 @@ O sistema contém:
 - Main com produtos : 3 categorias, sendoe elas Frutas e Verduras, Alimentos Não Perecíveis, Higiene e Limpeza (com 2 produtos cada), além de 3 serviços oferecidos pelo minimercado (com descrição e valor).  
 - Footer com informações de contato, autoria, links rápidos e links para redes sociais.
 
+___
+
 __Como acessar o projeto:__
 
 [link do site] 
 
 [Link do repositorio] https://github.com/GCBeatriz
+
+___
 
 __Observações:__
 
