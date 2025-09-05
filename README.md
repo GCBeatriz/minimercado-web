@@ -12,13 +12,12 @@ ___
 
 __Como acessar o projeto:__
 
-[link do site] 
+[link do site] : https://gcbeatriz.github.io/minimercado-web
 
-[Link do repositorio] https://github.com/GCBeatriz
+[Link do repositorio] : https://github.com/GCBeatriz
 
 ___
 
-__Observações:__
+__Observação:__
 
-- Os produtos e serviços estão com textos de exemplo (Lorem Ipsum) e imagens placeholders;
-
+- Os produtos estão sendo representados com imagens sem formatação CSS e serão devidamente formatados na fase 2.
