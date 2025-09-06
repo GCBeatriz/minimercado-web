@@ -37,7 +37,7 @@ header input.form-control {
 
 } /* Estilo do campo de busca */
 
-header button.btn {
+header button.btn, .login {
     background-color: #F3A36B;
     color: #ffffff;
     border: none;
@@ -45,9 +45,9 @@ header button.btn {
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
-} /* Estilo do botão de busca */
+} /* Estilo do botão de busca e cadastro */
 
-header button.btn:hover {
+header button.btn:hover, .login:hover {
     background-color: #f3a46ba2;
 }
 
@@ -61,6 +61,15 @@ header button.btn:hover {
     text-decoration: underline;
 }
 
+.login {
+  background-color: #F3A36B;
+  color: white;
+  border: none;
+  border-radius: 10px; /* arredondado */
+  padding: 8px 16px;
+  font-weight: bold;
+
+}
 
 /* Carrossel */
 .carousel-caption h5 {
