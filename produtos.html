@@ -9,23 +9,52 @@
 </head>
 <body>
     <header>
-        <!-- informações do minimercado, links de navegação para as páginas -->
-         <img src="img/logo.png" alt="Logo do mini mercado">
+        <div class="container-fluid d-flex flex-column p-2">
+    
+        <!-- Linha do logo e busca -->
+            <div class="d-flex justify-content-between align-items-center mb-2 flex-wrap">
+          <!-- Logo à esquerda -->
+          <img src="img/logo.png" alt="Logo do mini mercado" class="logo">
 
-         <form action="">
-            <input type="text" placeholder="Buscar produtos...">
-            <button type="submit">Buscar</button>
-         </form>
+              <!-- Busca centralizada -->
+              <div class="flex-grow-1 d-flex justify-content-center">
+             <form class="d-flex w-100" style="max-width: 400px;" role="search">
+                 <input class="form-control me-2" type="search" placeholder="Buscar produtos..." aria-label="Buscar">
+                 <button class="btn btn-warning" type="submit">Buscar</button>
+             </form>
+              </div>
+         </div>
 
-         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-         </nav>
+      <!-- Navbar responsiva -->
+       <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #CD5B51;">
+         <div class="container-fluid">
+               <!-- Botão hamburguer -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+             aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+               <span class="navbar-toggler-icon"></span>
+            </button>
 
+           <!-- Links do menu -->
+              <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                 <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                 </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="produtos.html">Produtos</a>
+                  </li>
+                 <li class="nav-item">
+                  <a class="nav-link" href="servicos.html">Serviços</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="contato.html">Contato</a>
+                  </li>
+               </ul>
+             </div>
+           </div>
+          </nav>
+
+      </div>
     </header>
 
     <main>

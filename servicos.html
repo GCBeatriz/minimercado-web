@@ -9,23 +9,39 @@
 </head>
 <body>
     <header>
-        <!-- informações do minimercado, links de navegação para as páginas -->
-         <img src="img/logo.png" alt="Logo do mini mercado">
+        <div class="container-fluid d-flex flex-column p-2">
+            <!-- Logo -->
+            <img src="img/logo.png" alt="Logo do mini mercado" class="logo">
+        </div>
 
-         <form action="">
-            <input type="text" placeholder="Buscar produtos...">
-            <button type="submit">Buscar</button>
-         </form>
+        <!-- Navbar responsiva -->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #CD5B51;">
+            <div class="container-fluid">
+                <!-- Botão hamburguer -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-         </nav>
-
+                <!-- Links do menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produtos.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -34,10 +50,10 @@
 
             <p>Escolha a forma de retirada:</p>
             <input type="radio" id="retirada" name="servico" value="retirada" required>
-            <label for="retirada">Retirada no Local</label>
+            <label for="retirada" id="ret">Retirada no Local</label>
 
             <input type="radio" id="entrega" name="servico" value="entrega" required>
-            <label for="entrega">Entrega em Domicílio</label><br><br>
+            <label for="entrega" id="ent">Entrega em Domicílio</label><br><br>
 
             <label for="data">Data:</label>
             <input type="date" id="data" name="data" required><br><br>
@@ -47,7 +63,7 @@
 
             <button type="submit">Confirmar Agendamento</button>
         </form>
-</main>
+    </main>
 
     <footer>
         <!-- informações legais de autoria, contato, links -->

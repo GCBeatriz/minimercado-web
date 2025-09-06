@@ -1,98 +1,81 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
-} /* estilo básico para o corpo da página */
+    box-sizing: border-box;
+} /*Estilo b ásico para o corpo da página */
 
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
-    color : #333;
-    line-height: 1.6; /* Distância entre cada linha*/ 
+    color: #333;
+    line-height: 1.6;
     display: flex;
-    flex-direction: column; 
-    min-height: 100vh; 
-} /* corpo da página com display flex para o footer ficar no final da página */
+    flex-direction: column;
+    min-height: 100vh;
+} /* Flexbox para layout de coluna e para que o footer fique no final da página */
 
 main {
-flex-grow: 1; /* faz o main crescer para ocupar o espaço disponível */
-}
+    flex-grow: 1;
+} /* Faz o main crescer para ocupar o espaço disponível */
 
 
 /* Header */
-
 header {
-    background-color: #CD5B51 ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    background-color: #CD5B51;
 }
 
-header img {
+header .logo {
     width: 120px;
-} /* tamanho do logo no header */
-
-header input {
-  padding: 6px 10px;
-  border: none;
-  border-radius: 4px;
-  width: 350px;
+    margin-left: 0;
 }
 
-header button {
-  background: #F3A36B;
-  color: #ffffff;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
+header input.form-control {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+
+} /* Estilo do campo de busca */
+
+header button.btn {
+    background-color: #F3A36B;
+    color: #ffffff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+} /* Estilo do botão de busca */
+
+header button.btn:hover {
+    background-color: #f3a46ba2;
 }
 
-header button:hover {
-  background: #f3a46ba2;
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
 }
 
-.produto img {
-    width: 100%;
-    max-width: 200px; 
-} /* tamanho das imagens dos produtos, limitando a largura máxima */
-
-
-/* Navegação */
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-nav a:hover {
-  text-decoration: underline;
-  color: #F3A36B;
+.navbar-nav .nav-link:hover {
+    color: #F3A36B;
+    text-decoration: underline;
 }
 
 
-/* Carrossel */ 
-
+/* Carrossel */
 .carousel-caption h5 {
     background-color: rgba(0, 0, 0, 0.418);
     display: inline-block;
     padding: 5px 10px;
     border-radius: 5px;
-} /* estilizando o título do carrossel */
+} /* Fundo semi-transparente para o título do carrossel */
 
 .carousel-inner img {
     width: 100%;
     height: auto;
-    max-height: 300px; /* limita altura máxima */
+    max-height: 300px;
     object-fit: contain;
-} /* ajustando a imagem para caber no carrossel */
+} /* Ajusta o tamanho das imagens do carrossel */
 
 .carousel-inner p {
     color: white;
@@ -101,25 +84,110 @@ nav a:hover {
     margin: auto;
     border-radius: 5px;
     font-weight: bolder;
-} /* estilizando o texto do carrossel */
+} /* Estilo do texto descritivo do carrossel */
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-size: 100% 100%;
-} /* ajustando o tamanho das setas */
-
-.carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='lightslategrey' viewBox='0 0 10 10'%3E%3Cpath d='M3.5 0L4.5 1 1 5 4.5 9 3.5 10 0 5 3.5 0z'/%3E%3C/svg%3E");
-} /* seta esquerda */
-
+.carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='lightslategrey' viewBox='0 0 10 10'%3E%3Cpath d='M6.5 0L5.5 1 9 5 5.5 9 6.5 10 10 5 6.5 0z'/%3E%3C/svg%3E");
+    background-size: 100% 100%;
+} /* Ajusta o tamanho dos ícones de controle do carrossel */
+
+.carousel-control-prev-icon { 
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='lightslategrey' viewBox='0 0 10 10'%3E%3Cpath d='M3.5 0L4.5 1 1 5 4.5 9 3.5 10 0 5 3.5 0z'/%3E%3C/svg%3E"); 
+} /* seta esquerda */ 
+
+.carousel-control-next-icon { 
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='lightslategrey' viewBox='0 0 10 10'%3E%3Cpath d='M6.5 0L5.5 1 9 5 5.5 9 6.5 10 10 5 6.5 0z'/%3E%3C/svg%3E"); 
 } /* seta direita */
 
-.carousel-caption {
-  position: static; /* tirando o absolute para o h5 e p do carrossel não ficar em cima da imagem do produto*/
-  text-align: center;
-  margin-top: 5px;
-} /* centralizando o texto do carrossel */
+    .carousel-caption {
+    position: static;
+    text-align: center;
+    margin-top: 5px;
+} /* Centraliza a legenda do carrossel */
+
+/* Produtos */
+.categoria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    justify-content: flex-start;
+} /* Flexbox para layout responsivo na seção de produtos*/
+
+.categoria h2 {
+    width: 100%;
+    margin-bottom: 15px;
+    color: #CD5B51;
+} /* Estilo do título da categoria */
+
+.categoria .produto {
+    flex: 1 1 calc(50% - 20px); /* dois produtos por linha */
+    max-width: calc(50% - 20px); 
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #fff;
+    
+} /* Estilo do container de produtos */
+
+.produto img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+} /* Tamanho da imagem do produto */
+
+.produto h3 {
+    color: #CD5B51;
+    margin-bottom: 10px;
+} /* Estilo do nome do produto */
+
+.produto p {
+    font-weight: bolder;
+    margin: 10px 0;
+} /* Estilo do preço do produto */
+
+.produto button {
+    background: #CD5B51;
+    color: #ffffff;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+} /* Estilo do botão de compra */
+
+.produto button:hover {
+    background: #CD5B51a2;
+} /* Efeito hover no botão de compra */
+
+/* Serviços */
+
+#servicos .servico {
+    background-color: #fff; /* destaca o serviço */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.116);
+    transition: transform 0.5s, box-shadow 0.3s;
+}
+#servicos .servico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2); 
+} /* Efeito hover nos serviços */
+
+#servicos .servico h3 {
+    color: #CD5B51;
+    margin-bottom: 10px;
+}
+
+#servicos .servico p {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
 
 /* Footer */
 
@@ -127,40 +195,128 @@ footer {
     background-color: black;
     display: flex;
     flex-wrap: wrap;
-    bottom: 0%;
-    width: 100%;
-}
+    padding: 20px;
+    justify-content: center;
+    gap: 30px;
+    color: white;
+} /* Flexbox para layout responsivo no footer */
 
 footer a {
-  color: darkgrey;
-  text-decoration: none;
-}
+    color: darkgrey;
+    text-decoration: none;
+} /* Estilo dos links do footer */
 
 footer a:hover {
-  text-decoration: underline;
-  color: #CD5B51;
-}
-
-footer p {
-    color: white;
-}
+    text-decoration: underline;
+    color: #CD5B51;
+} /* Efeito hover nos links do footer */
 
 footer h3 {
     color: #CD5B51;
-}
+} /* Estilo dos títulos do footer */
 
 .footer-author, .contact-info, .footer-links, .social-media {
-    justify-content: center;
     text-align: center;
-}
-
-.contact-info, .footer-links, .social-media {
-
-    margin-right: 140px;
-    margin-left: 30px;
-}
+} /* Centraliza o texto nas seções do footer */
 
 .footer-author {
     width: 100%;
+    margin-top: 20px;
+}
+
+/* Responsividade */
+
+/* tela pequena (celulares) */
+@media (max-width: 575px) {
+     .carousel-caption h5 {
+        font-size: 14px;
+        padding: 3px 5px;
+    } /* Ajusta o tamanho do título do carrossel em telas pequenas */
+
+    .carousel-caption p {
+        font-size: 12px;
+        width: 90%;
+    } /* Ajusta o tamanho do texto do carrossel em telas pequenas */
+    .categoria {
+        justify-content: center;
+    } /* centraliza se houver 1 produto por linha */
+
+    .categoria .produto {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    } /* um produto por linha */
+}
+
+/* Seção de agendamento/Serviços*/
+
+main h1 {
+    color: #CD5B51;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 32px;
+} /* Estilo do título principal */
+
+main form {
+    max-width: 500px;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+} /* Estilo do formulário */
+
+main form p {
+    font-weight: bold;
     display: block;
+    margin-bottom: 5px;
+    color: #333;
+} /* Estilo dos textos do formulário */
+
+form label {
+    display: flex;
+    align-items: center;
+    margin-right: 15px; /* espaço entre opções */
+    cursor: pointer;
+}
+
+form #retirada + #ret {
+    display: inline-flex;
+}
+
+form #entrega + #ent {
+    display: inline-flex;
+}
+
+main form input[type="date"],
+main form input[type="time"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+} /* Estilo dos campos de data e hora */
+
+main form button {
+    background-color: #CD5B51;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.3s;
+} /* Estilo do botão de envio */
+
+main form button:hover {
+    background-color: #CD5B51a2;
+} /* Efeito hover no botão de envio */
+
+/* Responsividade */
+@media(max-width: 767px) {
+    main form {
+        padding: 20px;
+    }
 }
