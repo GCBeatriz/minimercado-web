@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style.css">
     <title>Home</title>
 </head>
@@ -27,22 +29,86 @@
 
     </header>
     <main>
+        <h1>Bem-vindo ao Mini Mercado Online</h1>
+        <p>Seu destino para compras rápidas e convenientes!</p>
+
+<!-- Carrossel de produtos em destaque -->
+<div id="carrosselProdutos" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active"> 
+      <img src="img/maça.png" class="d-block w-100" alt="Maçã fresca">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Maçã fresca</h5>
+        <p>Selecionada e de qualidade.</p>
+      </div> 
+    </div> 
+    <div class="carousel-item">
+      <img src="img/alface.png" class="d-block w-100" alt="Alface">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Alface crocante</h5>
+        <p>Perfeita para saladas.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/arroz.png" class="d-block w-100" alt="Arroz branco">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Arroz tipo 1</h5>
+        <p>Soltinho e saboroso.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/feijao.png" class="d-block w-100" alt="feijao">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Feijão</h5>
+        <p>Sabor caseiro e rico em fibras.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/sabao.png" class="d-block w-100" alt="Sabão em pó">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Sabão em pó</h5>
+        <p>Limpeza eficaz e roupas perfumadas.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/detergente.png" class="d-block w-100" alt="Detergente líquido">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Detergente líquido</h5>
+        <p>Alto poder de limpeza e economia.</p>
+      </div>
+    </div>
+
+  </div>
+  <!--Botão esquerdo (produto anterior) -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carrosselProdutos" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+
+    <!--Botão direito (próximo produto) -->
+  <button class="carousel-control-next" type="button" data-bs-target="#carrosselProdutos" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Próximo</span>
+  </button>
+</div>
+
         <!-- Seção com as categorias / produtos -->
         <section id="produtos">
             <section class="categoria" id="frutas-verduras">
                 <h2>Frutas e verduras</h2>
 
                 <div class="produto">
-                    <img src="img/maça.png" alt="Maça fresca">
                     <h3>Maça</h3>
+                    <img src="img/maça.png" alt="Maça fresca">
                     <p>Maçã fresca, selecionada e de qualidade. Ideal para consumo in natura, sucos, sobremesas ou lanches saudáveis.</p>
                     <p>Preço: R$ 8,00</p>
                     <button>Adicionar ao Carrinho</button>
                 </div>
                 
                 <div class="produto">
-                    <img src="img/alface.png" alt="Alface">
                     <h3>Alface</h3>
+                    <img src="img/alface.png" alt="Alface">
                     <p>Alface crocante e fresca, perfeita para saladas, sanduíches e acompanhamento de refeições leves e nutritivas.</p>
                     <p>Preço: R$ 2,00</p>
                     <button>Adicionar ao Carrinho</button>
@@ -52,16 +118,16 @@
                 <h2>Alimentos Não Perecíveis</h2>
 
                 <div class="produto">
-                    <img src="img/feijao.png" alt="Feijão">
                     <h3>Feijão</h3>
+                    <img src="img/feijao.png" alt="Feijão">
                     <p>Feijão de alta qualidade, rico em fibras e proteínas. Essencial no prato do dia a dia, rende bem e garante sabor caseiro.</p>
                     <p>Preço: R$ 5,99</p>
                     <button>Adicionar ao Carrinho</button>
                 </div>
                 
                 <div class="produto">
-                    <img src="img/arroz.png" alt="Arroz branco">
                     <h3>Arroz</h3>
+                    <img src="img/arroz.png" alt="Arroz branco">
                     <p>Arroz branco tipo 1, soltinho e saboroso. Ideal para acompanhar suas refeições, combina com feijão e diversos pratos.</p>
                     <p>Preço: R$ 30,00</p>
                     <button>Adicionar ao Carrinho</button>
@@ -72,16 +138,16 @@
                 <h2>Higiene e Limpeza</h2>
 
                 <div class="produto">
-                    <img src="img/sabao.png" alt="Sabão em pó">
                     <h3>Sabão em pó</h3>
+                    <img src="img/sabao.png" alt="Sabão em pó">
                     <p>Sabão em pó eficaz na remoção de manchas e sujeiras, deixando suas roupas limpas e perfumadas por mais tempo.</p>
                     <p>Preço: R$ 12,00</p>
                     <button>Adicionar ao Carrinho</button>
                 </div>
                 
                 <div class="produto">
-                    <img src="img/detergente.png" alt="Detergente líquido">
                     <h3>Detergente</h3>
+                    <img src="img/detergente.png" alt="Detergente líquido">
                     <p>Detergente líquido com alto poder de limpeza e economia. Remove a gordura com facilidade e não agride as mãos.</p>
                     <p>Preço: R$ 3,50</p>
                     <button>Adicionar ao Carrinho</button>
@@ -89,6 +155,7 @@
             </section>
         </section>
 
+            <!-- Seção com os serviços oferecidos -->
         <section id="servicos">
             <h2>Serviços</h2>
             <div class="servico">
@@ -115,26 +182,38 @@
 
     <footer>
         <!-- informações legais de autoria, contato, links -->
-        <p> 2025 Beatriz Gonçalves - Projeto de Fundamentos de Sistemas Web</p>
-        
-        <p>Email: exemplocontato@minimercado.com | Telefone: (11) 99999-9999 </p>
-        <p>Endereço: Rua Exemplo, 123 - Cidade, Estado</p>
-        <p>Links Rápidos:</p>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="servicos.html">Serviços</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
 
-        <p>Siga-nos:</p>
-        <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-        </ul>
+        <div class="contact-info">
+            <h3>Contate-nos</h3>
+            <p>Email: exemplocontato@minimercado.com | Telefone: (11) 99999-9999 </p>
+            <p>Endereço: Rua Exemplo, 123 - Cidade, Estado</p>
+            <p>0800 111 1111</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Links Rápidos:</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <h3>Siga-nos</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-author">
+            <p> 2025 Beatriz Gonçalves - Projeto de Fundamentos de Sistemas Web</p>
+        </div>
         
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

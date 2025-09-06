@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+} /* estilo básico para o corpo da página */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color : #333;
+    line-height: 1.6; /* Distância entre cada linha*/ 
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+} /* corpo da página com display flex para o footer ficar no final da página */
+
+main {
+flex-grow: 1; /* faz o main crescer para ocupar o espaço disponível */
+}
+
+
+/* Header */
+
+header {
+    background-color: #CD5B51 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 120px;
+} /* tamanho do logo no header */
+
+header input {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  width: 350px;
+}
+
+header button {
+  background: #F3A36B;
+  color: #ffffff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+header button:hover {
+  background: #f3a46ba2;
+}
+
+.produto img {
+    width: 100%;
+    max-width: 200px; 
+} /* tamanho das imagens dos produtos, limitando a largura máxima */
+
+
+/* Navegação */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #F3A36B;
+}
+
+
+/* Carrossel */ 
+
+.carousel-caption h5 {
+    background-color: rgba(0, 0, 0, 0.418);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+} /* estilizando o título do carrossel */
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* limita altura máxima */
+    object-fit: contain;
+} /* ajustando a imagem para caber no carrossel */
+
+.carousel-inner p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.418);
+    width: 300px;
+    margin: auto;
+    border-radius: 5px;
+    font-weight: bolder;
+} /* estilizando o texto do carrossel */
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-size: 100% 100%;
+} /* ajustando o tamanho das setas */
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='lightslategrey' viewBox='0 0 10 10'%3E%3Cpath d='M3.5 0L4.5 1 1 5 4.5 9 3.5 10 0 5 3.5 0z'/%3E%3C/svg%3E");
+} /* seta esquerda */
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='lightslategrey' viewBox='0 0 10 10'%3E%3Cpath d='M6.5 0L5.5 1 9 5 5.5 9 6.5 10 10 5 6.5 0z'/%3E%3C/svg%3E");
+} /* seta direita */
+
+.carousel-caption {
+  position: static; /* tirando o absolute para o h5 e p do carrossel não ficar em cima da imagem do produto*/
+  text-align: center;
+  margin-top: 5px;
+} /* centralizando o texto do carrossel */
+
+/* Footer */
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    bottom: 0%;
+    width: 100%;
+}
+
+footer a {
+  color: darkgrey;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #CD5B51;
+}
+
+footer p {
+    color: white;
+}
+
+footer h3 {
+    color: #CD5B51;
+}
+
+.footer-author, .contact-info, .footer-links, .social-media {
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-info, .footer-links, .social-media {
+
+    margin-right: 140px;
+    margin-left: 30px;
+}
+
+.footer-author {
+    width: 100%;
+    display: block;
+}
