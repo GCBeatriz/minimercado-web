@@ -95,3 +95,43 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// Validação do agendamento
+
+document.addEventListener("DOMContentLoaded", () => {
+  const agendamentoForm = document.querySelector("form[action='#']"); 
+
+  if (agendamentoForm) {
+    agendamentoForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      let valido = true;
+
+      // Serviço (retirada ou entrega)
+      const servico = document.querySelector('input[name="servico"]:checked');
+      if (!servico) {
+        alert("Por favor, escolha a forma de retirada (Retirada no Local ou Entrega em Domicílio).");
+        valido = false;
+      }
+
+      // Data
+      const data = document.getElementById("data");
+      const hoje = new Date().toISOString().split("T")[0]; // data atual no formato yyyy-mm-dd
+      if (!data.value || data.value < hoje) {
+        alert("Escolha uma data válida (a partir de hoje).");
+        valido = false;
+      }
+
+      // Hora
+      const hora = document.getElementById("hora");
+      if (!hora.value) {
+        alert("Por favor, escolha um horário.");
+        valido = false;
+      }
+
+      if (valido) {
+        alert("Agendamento realizado com sucesso!");
+        agendamentoForm.reset();
+      }
+    });
+  }
+});

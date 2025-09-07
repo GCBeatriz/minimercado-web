@@ -28,64 +28,64 @@
       <!-- Nome completo -->
       <div class="col-md-6">
         <p>Nome completo</p>
-        <input type="text" class="form-control" id="nome" required>
+        <input type="text" class="form-control" id="nome" aria-label="Nome completo" required>
         <div class="invalid-feedback">Por favor, insira seu nome completo.</div>
       </div>
 
       <!-- CPF -->
       <div class="col-md-6">
         <p>CPF</p>
-        <input type="text" class="form-control" id="cpf" minlength="11" maxlength="11" placeholder="Somente números" required>
+        <input type="text" class="form-control" id="cpf" minlength="11" maxlength="11" placeholder="Somente números" aria-label="CPF" required>
         <div class="invalid-feedback">Digite um CPF válido com 11 números.</div>
       </div>
 
       <!-- Endereço -->
       <div class="col-12">
         <p>Endereço</p>
-        <input type="text" class="form-control" id="endereco" placeholder="Rua, número, bairro" required>
+        <input type="text" class="form-control" id="endereco" placeholder="Rua, número, bairro" aria-label="Endereço" required>
         <div class="invalid-feedback">Informe seu endereço.</div>
       </div>
 
       <!-- Sexo -->
       <div class="col-12">
         <p>Sexo</p>
-        <label><input type="radio" name="sexo" value="masculino" required> Masculino</label>
-        <label><input type="radio" name="sexo" value="feminino"> Feminino</label>
-        <label><input type="radio" name="sexo" value="naoInformar"> Prefiro não informar</label>
+        <label><input type="radio" name="sexo" value="masculino" aria-label="Sexo Masculino" required> Masculino</label>
+        <label><input type="radio" name="sexo" value="feminino" aria-label="Sexo feminino"> Feminino</label>
+        <label><input type="radio" name="sexo" value="naoInformar" aria-label="Não informar sexo"> Prefiro não informar</label>
       </div>
 
       <!-- Telefone -->
       <div class="col-md-6">
         <p>Telefone</p>
-        <input type="tel" class="form-control" id="telefone" placeholder="(11) 99999-9999" required>
+        <input type="tel" class="form-control" id="telefone" placeholder="(11) 99999-9999" aria-label="Telefone" required>
         <div class="invalid-feedback">Digite um número de telefone válido.</div>
       </div>
 
       <!-- Email -->
       <div class="col-md-6">
         <p>E-mail</p>
-        <input type="email" class="form-control" id="email" placeholder="nome@email.com" required>
+        <input type="email" class="form-control" id="email" placeholder="nome@email.com" aria-label="E-mail" required>
         <div class="invalid-feedback">Digite um e-mail válido.</div>
       </div>
 
       <!-- Data de nascimento -->
       <div class="col-md-6">
         <p>Data de Nascimento</p>
-        <input type="date" class="form-control" id="nascimento" required>
+        <input type="date" class="form-control" id="nascimento" aria-label="Data de nascimento" required>
         <div class="invalid-feedback">Informe sua data de nascimento.</div>
       </div>
 
       <!-- Senha -->
       <div class="mb-3">
           <label for="senha" class="form-label">Senha</label>
-          <input type="password" class="form-control" id="senha" minlength="8" required>
+          <input type="password" class="form-control" id="senha" minlength="8" aria-label="Senha" required>
           <div class="invalid-feedback">A senha deve ter pelo menos 8 caracteres.</div>
       </div>
 
       <!-- Aceite de termos -->
       <div class="col-12">
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="termos" required>
+          <input class="form-check-input" type="checkbox" id="termos" required aria-label="Termos de uso">
           <label class="form-check-label" for="termos">
             Eu li e aceito os <a href="#">termos de uso</a>.
           </label>

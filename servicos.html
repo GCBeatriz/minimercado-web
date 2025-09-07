@@ -49,17 +49,17 @@
         <form action="#" method="post">
 
             <p>Escolha a forma de retirada:</p>
-            <input type="radio" id="retirada" name="servico" value="retirada" required>
+            <input type="radio" id="retirada" name="servico" value="retirada" aria-label="Retirada no local" required>
             <label for="retirada" id="ret">Retirada no Local</label>
 
-            <input type="radio" id="entrega" name="servico" value="entrega" required>
+            <input type="radio" id="entrega" name="servico" value="entrega" aria-label="Entrega em domicílio" required>
             <label for="entrega" id="ent">Entrega em Domicílio</label><br><br>
 
             <label for="data">Data:</label>
-            <input type="date" id="data" name="data" required><br><br>
+            <input type="date" id="data" name="data" aria-label="Data" required><br><br>
 
             <label for="hora">Horário:</label>
-            <input type="time" id="hora" name="hora" required><br><br>
+            <input type="time" id="hora" name="hora" aria-label="Horário" required><br><br>
 
             <button type="submit">Confirmar Agendamento</button>
         </form>
