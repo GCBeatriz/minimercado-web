@@ -49,19 +49,27 @@
         <form action="#" method="post">
 
             <p>Escolha a forma de retirada:</p>
-            <label for="retirada" id="ret">Retirada no Local</label>
-            <input type="radio" id="retirada" name="servico" value="retirada" aria-label="Retirada no local" required>
+            <div class="mb-3">
+                <label for ="retirada" id="ret">Retirada no Local</label>
+                <input type="radio" id="retirada" name="servico" value="retirada" aria-label="Retirada no local" required>
+            </div>
 
-            <label for="entrega" id="ent">Entrega em Domicílio</label>
-            <input type="radio" id="entrega" name="servico" value="entrega" aria-label="Entrega em domicílio" required>
+            <div class="mb-3">
+                <label for="entrega" id="ent">Entrega em Domicílio</label>
+                <input type="radio"  id="entrega" name="servico" value="entrega" aria-label="Entrega em domicílio" required>
+            </div>
 
-            <label for="data">Data:</label>
-            <input type="date" id="data" name="data" aria-label="Data" required><br><br>
+            <div class="mb-3">
+                <label for="data">Data:</label>
+                <input type="date" class="form-control" id="data" name="data" aria-label="Data" required>
+            </div>
 
-            <label for="hora">Horário:</label>
-            <input type="time" id="hora" name="hora" aria-label="Horário" required><br><br>
+            <div class="mb-3">
+                <label for="hora">Horário:</label>
+                <input type="time" class="form-control" id="hora" name="hora" aria-label="Horário" required>
+            </div>
 
-            <button type="submit">Confirmar Agendamento</button>
+            <button type="submit" class="btn w-100 btn-custom">Confirmar Agendamento</button>
         </form>
     </main>
 

@@ -91,6 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (valido) {
       alert("Cadastro realizado com sucesso!");
       form.reset();
+      form.classList.remove("was-validated"); // reseta validação visual bootstrap
       form.querySelectorAll(".is-valid, .is-invalid").forEach(el => el.classList.remove("is-valid", "is-invalid"));
     }
   });

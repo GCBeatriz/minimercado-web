@@ -198,6 +198,15 @@ header button.btn:hover, .login:hover {
     margin-bottom: 5px;
 }
 
+.btn-custom {
+    background-color: #CD5B51;
+    color: #fff;
+} /* Botão de confirmação do agendamento de serviço */
+
+.btn-custom:hover {
+  background-color: #b94a42;
+} /* Efeito hover no botão de confirmação do agendamento de serviço */
+
 /* Footer */
 
 footer {
