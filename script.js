@@ -1,3 +1,4 @@
+// Validação do formulário de cadastro usando Bootstrap 5
 (function () {
   'use strict';
   const forms = document.querySelectorAll('.needs-validation');
@@ -128,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Por favor, escolha um horário.");
         valido = false;
       }
-
+      
       if (valido) {
         alert("Agendamento realizado com sucesso!");
         agendamentoForm.reset();

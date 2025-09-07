@@ -23,12 +23,12 @@ main {
 header {
     flex-wrap: wrap;
     background-color: #CD5B51;
-}
+} 
 
 header .logo {
     width: 120px;
     margin-left: 0;
-}
+} /* Tamanho do logo */
 
 header input.form-control {
     padding: 6px 10px;
@@ -49,17 +49,17 @@ header button.btn, .login {
 
 header button.btn:hover, .login:hover {
     background-color: #f3a46ba2;
-}
+} /* Efeito hover no botão de busca e cadastro */
 
 .navbar-nav .nav-link {
     color: #fff;
     font-weight: 500;
-}
+} /* Estilo dos links da navbar */
 
 .navbar-nav .nav-link:hover {
     color: #F3A36B;
     text-decoration: underline;
-}
+} /* Efeito hover nos links da navbar */
 
 .login {
   background-color: #F3A36B;
@@ -68,8 +68,7 @@ header button.btn:hover, .login:hover {
   border-radius: 10px; /* arredondado */
   padding: 8px 16px;
   font-weight: bold;
-
-}
+} /* Estilo do botão de login */
 
 /* Carrossel */
 .carousel-caption h5 {
@@ -139,7 +138,6 @@ header button.btn:hover, .login:hover {
     text-align: center;
     box-sizing: border-box;
     background-color: #fff;
-    
 } /* Estilo do container de produtos */
 
 .produto img {
@@ -175,13 +173,14 @@ header button.btn:hover, .login:hover {
 /* Serviços */
 
 #servicos .servico {
-    background-color: #fff; /* destaca o serviço */
+    background-color: #fff;
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.116);
     transition: transform 0.5s, box-shadow 0.3s;
-}
+} /* Estilo do container de serviços */
+
 #servicos .servico:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0,0,0,0.2); 
@@ -190,13 +189,13 @@ header button.btn:hover, .login:hover {
 #servicos .servico h3 {
     color: #CD5B51;
     margin-bottom: 10px;
-}
+} /* Estilo do título do serviço */
 
 #servicos .servico p {
     color: #333;
     font-size: 14px;
     margin-bottom: 5px;
-}
+} /* Estilo do texto do serviço */
 
 .btn-custom {
     background-color: #CD5B51;
@@ -240,7 +239,7 @@ footer h3 {
 .footer-author {
     width: 100%;
     margin-top: 20px;
-}
+} /* Estilo da seção de autoria no footer (para ficar em uma linha sozinho) */
 
 /* Responsividade */
 
@@ -266,7 +265,7 @@ footer h3 {
     } /* um produto por linha */
 }
 
-/* Seção de agendamento/Serviços*/
+/* Seção de agendamento / Serviços */
 
 main h1 {
     color: #CD5B51;
@@ -294,17 +293,17 @@ main form p {
 form label {
     display: flex;
     align-items: center;
-    margin-right: 15px; /* espaço entre opções */
+    margin-right: 15px;
     cursor: pointer;
-}
+} /* Estilo dos labels dos radio buttons */
 
 form #retirada + #ret {
     display: inline-flex;
-}
+} /* Coloca os radio buttons em linha (retirada) */
 
 form #entrega + #ent {
     display: inline-flex;
-}
+} /* Coloca os radio buttons em linha (entrega) */
 
 main form input[type="date"],
 main form input[type="time"] {
@@ -341,13 +340,13 @@ main form button:hover {
 
 /* Seção de cadastro de usuários */
 
-/* Estilo para inputs do cadastro */
+
 main form input.form-control {
   border-radius: 8px;
   border: 1px solid #ccc;
   padding: 8px 10px;
   margin-bottom: 15px;
-}
+} /* Estilo para inputs do cadastro */
 
 /* Botão do cadastro */
 main form button {
@@ -359,8 +358,8 @@ main form button {
   cursor: pointer;
   font-weight: bold;
   transition: background 0.3s;
-}
+} /* Estilo do botão do formulário */
 
 main form button:hover {
   background-color: #CD5B51a2;
-}
+} /* Efeito hover no botão do formulário */
