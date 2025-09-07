@@ -158,7 +158,7 @@ header button.btn:hover, .login:hover {
     margin: 10px 0;
 } /* Estilo do preço do produto */
 
-.produto button {
+.produto button, .btnw-100 {
     background: #CD5B51;
     color: #ffffff;
     border: none;
@@ -168,7 +168,7 @@ header button.btn:hover, .login:hover {
     font-weight: bold;
 } /* Estilo do botão de compra */
 
-.produto button:hover {
+.produto button:hover, .btnw-100:hover {
     background: #CD5B51a2;
 } /* Efeito hover no botão de compra */
 
@@ -328,4 +328,30 @@ main form button:hover {
     main form {
         padding: 20px;
     }
+}
+
+/* Seção de cadastro de usuários */
+
+/* Estilo para inputs do cadastro */
+main form input.form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+}
+
+/* Botão do cadastro */
+main form button {
+  background-color: #CD5B51;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+main form button:hover {
+  background-color: #CD5B51a2;
 }
